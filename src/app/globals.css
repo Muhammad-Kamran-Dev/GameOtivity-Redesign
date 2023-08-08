@@ -31,6 +31,6 @@ body {
   background: linear-gradient(to right, var(--rgba-black), var(--rgba-purple));
   color: var(--neutral-900);
   line-height: 1.6;
-  max-width: 100vw;
   overflow-x: hidden;
+  width: 100vw;
 }

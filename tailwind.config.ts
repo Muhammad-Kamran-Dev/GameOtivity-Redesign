@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        "electric-blue-900": "#9BFCEB"
+      },
       backgroundImage: {},
       transitionProperty: {
         width: "width",
