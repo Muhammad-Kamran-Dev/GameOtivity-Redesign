@@ -3,7 +3,7 @@ import Link from "next/link";
 import VideoIcon from "@/../public/assets/svg/icons-components/VideoIcon";
 const Hero = () => {
   return (
-    <section className="grid items-center grid-cols-1 gap-10 md:grid-cols-2">
+    <section className="grid items-center grid-cols-1 gap-10 mb-32 lg:items-start md:grid-cols-2 lg:mb-52">
       <div className="flex flex-col gap-7 hero-text ">
         <div className="relative flex items-center justify-center hero-title">
           <Image
@@ -16,7 +16,7 @@ const Hero = () => {
             Gaming More. <span className="text-[#EEA00C]">Earn Limitless.</span>
           </h1>
         </div>
-        <p className="self-center w-11/12 text-center text-1xl lg:text-left">
+        <p className="self-center w-11/12 text-center lg:self-start text-1xl lg:text-left">
           Play your favourite game and be the part of the ultimate experience
           with world fastest Network protocol.
         </p>

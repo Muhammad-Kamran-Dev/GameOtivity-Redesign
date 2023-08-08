@@ -6,7 +6,7 @@ import Image from "next/image";
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="mb-20 lg:mb-40 shaow-2xl gradient-dark">
+    <header className="mb-20 lg:mb-52 shaow-2xl gradient-dark">
       <div className="flex items-center justify-between w-11/12 py-6 mx-auto ">
         <div className="logo">
           <Image
