@@ -6,7 +6,7 @@ import Image from "next/image";
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="mb-20 lg:mb-52 shaow-2xl gradient-dark">
+    <header className="shadow-2xl margin-bottom gradient-dark">
       <div className="flex items-center justify-between w-11/12 py-6 mx-auto ">
         <div className="logo">
           <Image
@@ -14,7 +14,7 @@ export const Navbar = () => {
             src="/assets/svg/logo.svg"
             width={10}
             height={10}
-            alt="Gmeotivity Logo"
+            alt="Gameotivity Logo"
           />
         </div>
 
@@ -22,7 +22,6 @@ export const Navbar = () => {
         <div
           className="md:hidden"
           onClick={() => {
-            console.log("clicked");
             setToggle((prev) => !prev);
           }}
         >
@@ -65,13 +64,13 @@ export const Navbar = () => {
             >
               <svg
                 /* prettier-ignore */
-                className="h-6 hover:scale-150 transition-transform .3s ease-in"
+                className="h-6 group hover:scale-150 transition-transform .3s ease-in"
                 xmlns="http://www.w3.org/2000/svg"
                 enableBackground="new 0 0 512 512"
                 viewBox="0 0 512 512"
               >
                 <path
-                  className="hover:fill-[#DD26FF] transition-fill .3s ease-in "
+                  className="group-hover:fill-[#DD26FF] transition-fill .3s ease-in "
                   fill="#fff"
                   d="M328.4 256L497 87.4c9.667-9.667 15-22.533 15-36.2s-5.333-26.533-15-36.2-22.533-15-36.2-15-26.533 5.333-36.2 15L256 183.6 87.4 15C77.733 5.333 64.867 0 51.2 0S24.667 5.333 15 15 0 37.533 0 51.2s5.333 26.533 15 36.2L183.6 256 15 424.6c-9.667 9.666-15 22.533-15 36.2s5.333 26.533 15 36.2c9.683 9.667 22.533 15 36.2 15s26.517-5.333 36.2-15L256 328.4 424.6 497c9.683 9.667 22.533 15 36.2 15s26.517-5.333 36.2-15c9.667-9.666 15-22.533 15-36.2s-5.333-26.533-15-36.2z"
                   data-original="#000000"
@@ -81,7 +80,7 @@ export const Navbar = () => {
             <li className="relative">
               <Link
                 href="/"
-                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:bg-[#DD26FF] after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
+                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
               >
                 Home
               </Link>
@@ -89,7 +88,7 @@ export const Navbar = () => {
             <li className="relative">
               <Link
                 href="/"
-                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:bg-[#DD26FF] after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
+                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
               >
                 Features
               </Link>
@@ -97,7 +96,7 @@ export const Navbar = () => {
             <li className="relative">
               <Link
                 href="/"
-                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:bg-[#DD26FF] after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
+                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
               >
                 Testimonial
               </Link>
@@ -105,7 +104,7 @@ export const Navbar = () => {
             <li className="relative">
               <Link
                 href="/"
-                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:bg-[#DD26FF] after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
+                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
               >
                 Team
               </Link>
@@ -119,7 +118,7 @@ export const Navbar = () => {
               width={10}
               alt="Svg Shape for img"
             />
-            <p className="absolute text-4xl text-center after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:bg-[#DD26FF] after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in">
+            <p className="absolute text-4xl text-center after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in">
               <Link href="/">WhitePaper</Link>
             </p>
           </div>
@@ -131,7 +130,7 @@ export const Navbar = () => {
             <li className="relative">
               <Link
                 href="/"
-                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:bg-[#DD26FF] after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
+                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
               >
                 Home
               </Link>
@@ -139,7 +138,7 @@ export const Navbar = () => {
             <li className="relative">
               <Link
                 href="/"
-                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:bg-[#DD26FF] after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
+                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
               >
                 Features
               </Link>
@@ -147,7 +146,7 @@ export const Navbar = () => {
             <li className="relative">
               <Link
                 href="/"
-                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:bg-[#DD26FF] after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
+                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
               >
                 Testimonial
               </Link>
@@ -155,7 +154,7 @@ export const Navbar = () => {
             <li className="relative">
               <Link
                 href="/"
-                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:bg-[#DD26FF] after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
+                className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
               >
                 Team
               </Link>

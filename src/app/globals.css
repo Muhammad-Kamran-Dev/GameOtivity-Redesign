@@ -6,6 +6,7 @@
   --neutral-900: #fff;
   --rgba-purple: rgba(25, 0, 139, 0.97);
   --rgba-black: rgba(23, 23, 24, 0.96);
+  --orange-reward: #eea00c;
 }
 
 *,
@@ -18,7 +19,62 @@
 
 @layer utilities {
   .gradient-dark {
-    background: linear-gradient(to left, var(--rgba-purple), var(--rgba-black));
+    background: linear-gradient(
+      to right,
+      var(--rgba-purple),
+      var(--rgba-black)
+    );
+  }
+  .margin-bottom {
+    @apply mb-20;
+    @apply lg:mb-52;
+  }
+  .article-title {
+    @apply text-3xl font-bold leading-snug uppercase lg:text-5xl;
+    position: relative;
+  }
+  .gradient-b-border {
+    background: linear-gradient(to left, #7f00ff, #e100ff);
+  }
+  .b-glow {
+    filter: drop-shadow(0px 0px 10.260000228881836px #c301ff)
+      drop-shadow(0px 0px 71.81999969482422px #c301ff)
+      drop-shadow(0px 0px 123.12000274658203px #c301ff)
+      drop-shadow(0px 0px 215.4600067138672px #c301ff);
+  }
+  .article-title:after {
+    @apply h-1 rounded-full gradient-b-border b-glow;
+    content: "";
+    position: absolute;
+    width: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    bottom: -15%;
+  }
+  .core-feature-bg {
+    border-radius: 3.125rem;
+    background: linear-gradient(
+      135deg,
+      rgba(23, 23, 24, 0.99) 0%,
+      rgba(25, 0, 139, 0.85) 100%
+    );
+    box-shadow: 17px 2px 10px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  .core-feature-card-bg {
+    @apply rounded-3xl;
+    background: linear-gradient(
+      130deg,
+      rgba(215, 37, 250, 0.3) 20%,
+      rgba(51, 209, 187, 0.7) 99.99%,
+      rgba(45, 216, 185, 0.7) 100%,
+      rgba(45, 216, 185, 0.33) 100%
+    );
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .article-subtitle {
+    @apply text-2xl font-bold leading-snug uppercase lg:text-4xl;
   }
 }
 
