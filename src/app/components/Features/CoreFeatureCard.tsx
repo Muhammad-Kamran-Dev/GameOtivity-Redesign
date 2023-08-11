@@ -8,7 +8,7 @@ export type coreFeatureCard = {
 
 const CoreFeatureCard = ({ imgUrl, title, description }: coreFeatureCard) => {
   return (
-    <article className="flex flex-col gap-5 p-10 my-10 md:p-14 xl:p-16 core-feature-card-bg">
+    <article className="flex flex-col gap-5 p-10 my-10 md:p-14 xl:p-16 card-bg-gradient">
       <Image
         src={imgUrl}
         width={50}

@@ -19,45 +19,70 @@ const checkInput = (data: Data[]): string[] => {
 };
 
 export async function POST(req: NextRequest, res: NextResponse) {
-  const { name, email, password }: User = await req.json();
-  if (!name || !email || !password) {
-    const dataObj: Data[] = [
+  try {
+    const { name, email, password }: User = await req.json();
+    if (!name || !email || !password) {
+      const dataObj: Data[] = [
+        {
+          value: name,
+          name: "name",
+        },
+        {
+          value: email,
+          name: "email",
+        },
+        {
+          value: password,
+          name: "password",
+        },
+      ];
+      const requiredData: string[] = checkInput(dataObj);
+
+      return NextResponse.json(
+        {
+          message: `${
+            requiredData && requiredData.map((data) => data)
+          } is Required`,
+        },
+        {
+          status: 400,
+        }
+      );
+    }
+
+    const user: User = {
+      id: Math.floor(Math.random() * 100).toString(),
+      name,
+      email,
+      password,
+    };
+    return NextResponse.json(
       {
-        value: name,
-        name: "name",
+        success: true,
+        user,
+        message: "You hit the Login endpoint",
       },
       {
-        value: email,
-        name: "email",
-      },
-      {
-        value: password,
-        name: "password",
-      },
-    ];
-    const requiredData: string[] = checkInput(dataObj);
+        status: 200,
+      }
+    );
+  } catch (error) {
+    let errorMessage;
+
+    if (error instanceof Error) {
+      errorMessage = error.message;
+    } else {
+      errorMessage = "Fill the data in correct format";
+    }
 
     return NextResponse.json(
       {
-        message: `${
-          requiredData && requiredData.map((data) => data)
-        } is Required`,
+        success: false,
+        error: errorMessage,
       },
       {
         status: 400,
       }
     );
   }
-
-  const user: User = {
-    id: Math.floor(Math.random() * 100).toString(),
-    name,
-    email,
-    password,
-  };
-  return NextResponse.json({
-    status: "success",
-    user,
-    message: "You hit the Login endpoint",
-  });
 }

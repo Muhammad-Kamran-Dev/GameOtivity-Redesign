@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-type FeatureCardType = {
+export type FeatureCardType = {
   img: string;
   title: string;
   text: string;

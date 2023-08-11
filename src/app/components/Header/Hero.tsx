@@ -13,7 +13,8 @@ const Hero = () => {
             alt="Hero title inside Blocky shape "
           />
           <h1 className="absolute text-4xl font-bold leading-10 text-center md:text-3xl xl:text-6xl xl:leading-snug text-electric-blue-900">
-            Gaming More. <span className="text-[#EEA00C]">Earn Limitless.</span>
+            Gaming More.{" "}
+            <span className="text-orange-reward">Earn Limitless.</span>
           </h1>
         </div>
         <p className="self-center w-11/12 text-center lg:self-start text-1xl lg:text-left">
@@ -52,7 +53,7 @@ const Hero = () => {
             />
             <Link
               href="/ "
-              className="absolute flex gap-2 whitespace-nowrap group-hover:text-orange-500"
+              className="absolute flex gap-2 whitespace-nowrap group-hover:orange-reward"
             >
               <VideoIcon width={24} height={24} />
               Watch Video

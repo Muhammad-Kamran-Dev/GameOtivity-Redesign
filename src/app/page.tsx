@@ -1,6 +1,10 @@
-import CoreFeature from "./components/Features/CoreFeature";
-import Features from "./components/Features/Features";
-import Hero from "./components/Header/Hero";
+import {
+  Founder,
+  CoreFeature,
+  ExcitingFeatures,
+  Features,
+  Hero,
+} from "./components";
 
 export default function Home() {
   return (
@@ -8,6 +12,8 @@ export default function Home() {
       <Hero />
       <Features />
       <CoreFeature />
+      <ExcitingFeatures />
+      <Founder />
     </main>
   );
 }

@@ -1,13 +1,9 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
+import { FeatureCardType } from "./FeatureCard";
 
-type FeatureCard = {
-  img: string;
-  title: string;
-  text: string;
-};
 const Features = () => {
-  const featureData: FeatureCard[] = [
+  const featureData: FeatureCardType[] = [
     {
       title: "Community builder",
       img: "/assets/svg/Features/Community.svg",
