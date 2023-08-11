@@ -23,7 +23,7 @@ const FounderCard = ({
     >
       <div className="flex-1 flex flex-col items-center justify-center">
         <h2 className=" text-4xl font-bold  md:text-5xl lg:text-6xl">{name}</h2>
-        <h3 className="text-xl font-bold text-gray-400 mb-5 md:text-2xl lg:text-3xl">
+        <h3 className="text-xl font-bold text-gray-400 my-5 md:text-2xl lg:text-3xl">
           {designation}
         </h3>
         <div className="flex items-center justify-center w-52 group hover:cursor-pointer ">
@@ -48,11 +48,12 @@ const FounderCard = ({
         </div>
       </div>
       <div className=" flex-1 ">
+        {/* #TODO: image is not what i want  */}
         <Image
           src={imgUrl}
           width={1000}
           height={1000}
-          className="h-[400px] object-contain object-top transform "
+          className="lg:h-[400px] object-contain  "
           alt={name}
         />
       </div>

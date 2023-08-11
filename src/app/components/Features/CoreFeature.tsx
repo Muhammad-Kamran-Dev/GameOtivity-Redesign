@@ -55,7 +55,7 @@ const CoreFeature = () => {
 
       <section className="flex flex-col-reverse lg:flex-row p-5 margin-bottom items-center gap-10 card-bg-gradient lg:p-20">
         <div className="text-center lg:text-left flex-1">
-          <h2 className="mb-10 lg:mb-20 article-subtitle article-title lg:w-1/2">
+          <h2 className="mb-10 lg:mb-20 article-title lg:w-fit">
             CORE FEATURES
           </h2>
           <div className="text ">

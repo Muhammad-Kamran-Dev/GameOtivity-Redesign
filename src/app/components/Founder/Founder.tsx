@@ -5,8 +5,8 @@ const Founder = () => {
   return (
     <section className="margin-bottom ">
       <div className="flex justify-center mb-10">
-        <h2 className="mb-10 lg:mb-20 article-subtitle article-title lg:w-1/2 text-center">
-          <span className="text-electric-blue-900">Solution</span> for Gamers
+        <h2 className="mb-5 article-title text-center ">
+          <span className="text-electric-blue-900 ">Solution</span> for Gamers
           from <span className="text-orange-reward">Gamers</span>
         </h2>
       </div>
