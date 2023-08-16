@@ -28,6 +28,22 @@
     @apply mb-20;
     @apply lg:mb-52;
   }
+
+  /* Main-Grid */
+
+  .main-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5em;
+    place-items: center;
+  }
+  /* Header */
+
+  .btn-whitepaper:hover svg stop {
+    stop-color: #f97316;
+    transition: stop-color 0.3s ease-in-out;
+  }
+
   .article-title {
     @apply text-3xl font-bold leading-snug uppercase lg:text-5xl;
     position: relative;
@@ -65,12 +81,22 @@
     @apply rounded-3xl;
     background: linear-gradient(
       130deg,
-      rgba(215, 37, 250, 0.3) 20%,
-      rgba(51, 209, 187, 0.7) 99.99%,
-      rgba(45, 216, 185, 0.7) 100%,
-      rgba(45, 216, 185, 0.33) 100%
+      #d725fa4d 20%,
+      #33d1bbb3 99.99%,
+      #2dd8b9b3 100%,
+      #2dd8b954 100%
     );
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .bg-gradient-left {
+    background: linear-gradient(
+      to left,
+      #d725fa4d 20%,
+      #33d1bbb3 99.99%,
+      #2dd8b9b3 100%,
+      #2dd8b954 100%
+    );
   }
   .article-subtitle {
     @apply text-2xl font-bold leading-snug uppercase lg:text-4xl;
@@ -88,4 +114,21 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   width: 100vw;
+}
+
+/* Testimonials */
+.testimonial-container {
+  border-radius: 2.24206rem;
+  background: linear-gradient(
+    136deg,
+    rgba(254, 248, 255, 0.21) 0%,
+    rgba(254, 248, 255, 0) 100%
+  );
+  backdrop-filter: blur(57.87820816040039px);
+}
+.testimonial-card {
+  border-radius: 2.38944rem;
+  background: url("/assets/img/Rectangle.png"),
+    lightgray 0% 0% / 76.46239399909973px 76.46239399909973px repeat;
+  background-blend-mode: multiply;
 }

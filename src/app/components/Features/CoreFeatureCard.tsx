@@ -1,14 +1,16 @@
 import Image from "next/image";
 
-export type coreFeatureCard = {
+export type Props = {
   imgUrl: string;
   title: string;
   description: string;
 };
 
-const CoreFeatureCard = ({ imgUrl, title, description }: coreFeatureCard) => {
+const CoreFeatureCard = ({ imgUrl, title, description }: Props) => {
   return (
-    <article className="flex flex-col gap-5 p-10 my-10 md:p-14 xl:p-16 card-bg-gradient">
+    <article
+      className={`flex flex-col gap-5 p-10 my-10 md:p-14 xl:p-16 card-bg-gradient `}
+    >
       <Image
         src={imgUrl}
         width={50}

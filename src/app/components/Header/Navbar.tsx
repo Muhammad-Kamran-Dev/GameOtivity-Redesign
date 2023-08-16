@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState<boolean>(false);
   return (
     <header className="shadow-2xl margin-bottom gradient-dark">
       <div className="flex items-center justify-between w-11/12 py-6 mx-auto ">
@@ -87,7 +87,7 @@ export const Navbar = () => {
             </li>
             <li className="relative">
               <Link
-                href="/"
+                href="#feature"
                 className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
               >
                 Features
@@ -137,7 +137,7 @@ export const Navbar = () => {
             </li>
             <li className="relative">
               <Link
-                href="/"
+                href="#feature"
                 className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
               >
                 Features

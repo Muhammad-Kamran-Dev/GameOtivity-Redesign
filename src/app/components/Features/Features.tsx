@@ -21,7 +21,7 @@ const Features = () => {
     },
   ];
   return (
-    <section className="grid items-center justify-center grid-cols-1 mb-32 justify-items-center md:grid-cols-2 lg:grid-cols-3 margin-bottom gap-y-32 ">
+    <section className="feature grid items-center justify-center grid-cols-1 mb-32 justify-items-center md:grid-cols-2 lg:grid-cols-3 margin-bottom gap-y-32 ">
       {featureData.map((feature) => (
         <FeatureCard
           key={feature.title}

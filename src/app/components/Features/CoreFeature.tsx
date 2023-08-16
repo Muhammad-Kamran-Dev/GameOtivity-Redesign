@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import CoreFeatureCard from "./CoreFeatureCard";
-import { coreFeatureCard } from "./CoreFeatureCard";
+import { Props } from "./CoreFeatureCard";
+import GamerPerks from "./GamerPerks";
 const CoreFeature = () => {
-  const cardData: coreFeatureCard[] = [
+  const cardData: Props[] = [
     {
       imgUrl: "/assets/img/time-based-reward.svg",
       title: "Time-based reward system",
@@ -52,35 +53,16 @@ const CoreFeature = () => {
           </div>
         </article>
       </section>
-
-      <section className="flex flex-col-reverse lg:flex-row p-5 margin-bottom items-center gap-10 card-bg-gradient lg:p-20">
-        <div className="text-center lg:text-left flex-1">
-          <h2 className="mb-10 lg:mb-20 article-title lg:w-fit">
-            CORE FEATURES
-          </h2>
-          <div className="text ">
-            <h2 className="text-2xl font-bold mb-3 ">
-              Experience the future of gaming
-            </h2>
-
-            <p className="w-11/12  leading-7">
-              Gameotivity is changing the way we play games. This innovative
-              platform combines the excitement of gaming with the potential for
-              real rewards, including unique NFTs. With Gameotivity, you can
-              earn rewards just by playing the games you love, making it a
-              must-try for any gamer or NFT enthusiast
-            </p>
-          </div>
-        </div>
-        <div className="flex-1">
-          <Image
-            src="/assets/img/company-logos.png"
-            alt="Different Logos of Companies"
-            width={1000}
-            height={1000}
-          />
-        </div>
-      </section>
+      <GamerPerks
+        heading="CORE FEATURES"
+        title="Experience the future of gaming"
+        imgUrl="/assets/img/company-logos.png"
+        desc=" Gameotivity is changing the way we play games. This innovative
+            platform combines the excitement of gaming with the potential for
+            real rewards, including unique NFTs. With Gameotivity, you can earn
+            rewards just by playing the games you love, making it a must-try for
+            any gamer or NFT enthusiast"
+      />
     </>
   );
 };
