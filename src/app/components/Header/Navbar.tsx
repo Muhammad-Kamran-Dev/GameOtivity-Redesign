@@ -103,7 +103,7 @@ export const Navbar = () => {
             </li>
             <li className="relative">
               <Link
-                href="/"
+                href="#footer"
                 className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
               >
                 Team
@@ -145,7 +145,7 @@ export const Navbar = () => {
             </li>
             <li className="relative">
               <Link
-                href="/"
+                href="#footer"
                 className="after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:gradient-b-border after:w-0 after:h-[3px] after:rounded-full after:transform after:-translate-x-1/2 hover:after:w-full after:transition-width .3s ease-in"
               >
                 Testimonial

@@ -12,3 +12,31 @@ export const storeData: StoreData = {
   imgUrl: "/assets/img/gamestore.png",
   btnText: "Coming Soon",
 };
+type FAQ = {
+  count: string;
+  question: string;
+  desc: string;
+};
+
+export const FAQData: FAQ[] = [
+  {
+    count: "01",
+    question: "What is the concept behind Gameotivity?",
+    desc: "The concept behind Gameotivity is play more, earn more. Players are rewarded for the amount of time they spend playing games on the platform, with NFTs serving as the reward currency.",
+  },
+  {
+    count: "02",
+    question: "How do I start playing games on Gameotivity?",
+    desc: "The concept behind Gameotivity is play more, earn more. Players are rewarded for the amount of time they spend playing games on the platform, with NFTs serving as the reward currency.",
+  },
+  {
+    count: "03",
+    question: "Is Gameotivity safe and secure?",
+    desc: "The concept behind Gameotivity is play more, earn more. Players are rewarded for the amount of time they spend playing games on the platform, with NFTs serving as the reward currency.",
+  },
+  {
+    count: "04",
+    question: "How do I get support for Gameotivity?",
+    desc: "The concept behind Gameotivity is play more, earn more. Players are rewarded for the amount of time they spend playing games on the platform, with NFTs serving as the reward currency.",
+  },
+];

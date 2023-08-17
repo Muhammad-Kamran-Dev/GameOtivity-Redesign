@@ -40,8 +40,8 @@
   /* Header */
 
   .btn-whitepaper:hover svg stop {
-    stop-color: #f97316;
-    transition: stop-color 0.3s ease-in-out;
+    stopcolor: #f97316;
+    transition: stopColor 0.3s ease-in-out;
   }
 
   .article-title {
