@@ -19,7 +19,7 @@ const WalkthroughGuide = () => {
           Meet exciting features of Our app
         </h2>
       </div>
-      <section className="main-grid  w-11/12 mx-auto margin-bottom">
+      <section className="w-10/12  lg:main-grid lg:w-11/12 mx-auto margin-bottom">
         {steps.map((step) => {
           return (
             <StepComponent

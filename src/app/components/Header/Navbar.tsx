@@ -52,7 +52,7 @@ export const Navbar = () => {
           </svg>
         </div>
         <nav
-          className={`md:hidden z-10 absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center gap-20 justify-center transform 
+          className={`md:hidden z-10 fixed top-0 bottom-0 left-0 right-0 flex flex-col items-center gap-20 justify-center transform 
         ${
           toggle ? "transform translate-x-0" : "translate-x-full"
         } bg-black nav transition-transform .3s ease-in-out  `}

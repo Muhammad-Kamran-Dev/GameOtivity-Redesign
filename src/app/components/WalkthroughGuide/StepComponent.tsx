@@ -6,7 +6,7 @@ type Prop = {
 };
 
 const StepComponent = ({ imgUrl, altText }: Prop) => {
-  return <img src={imgUrl} alt={altText} />;
+  return <img className="my-10" src={imgUrl} alt={altText} />;
 };
 
 export default StepComponent;

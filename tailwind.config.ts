@@ -13,11 +13,15 @@ const config: Config = {
         "orange-reward": "#EEA00C",
         "dark-purple": "#19008bf7",
       },
+
       backgroundImage: {},
       transitionProperty: {
         width: "width",
         transform: "transform",
         fill: "fill",
+      },
+      screens: {
+        xsmb: "320px",
       },
     },
   },

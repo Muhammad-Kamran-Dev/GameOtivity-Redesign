@@ -12,6 +12,7 @@ const Hero = () => {
             height={10}
             width={10}
             alt="Hero title inside Blocky shape "
+            className=" hidden xsmb:inline-block"
           />
           <h1 className="absolute text-4xl font-bold leading-10 text-center md:text-3xl xl:text-6xl xl:leading-snug text-electric-blue-900">
             Gaming More.
