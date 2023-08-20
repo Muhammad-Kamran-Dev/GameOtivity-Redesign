@@ -1,5 +1,3 @@
-import React from "react";
-
 type Prop = {
   imgUrl: string;
   altText: string;

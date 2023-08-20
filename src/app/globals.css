@@ -132,3 +132,19 @@ body {
     lightgray 0% 0% / 76.46239399909973px 76.46239399909973px repeat;
   background-blend-mode: multiply;
 }
+
+.card {
+  border-radius: 2.24206rem;
+  background: linear-gradient(
+    136deg,
+    rgba(254, 248, 255, 0.21) 0%,
+    rgba(254, 248, 255, 0) 100%
+  );
+  box-shadow: 8.968255043029785px 8.968255043029785px 39.76044464111328px 0px
+      rgba(24, 19, 19, 0.16) inset,
+    -8.968255043029785px -8.968255043029785px 24.467966079711914px 0px
+      rgba(255, 255, 255, 0.15) inset;
+  backdrop-filter: blur(57.87820816040039px);
+
+  background: linear-gradient(to left, #fef8ff36, #fef8ff00);
+}

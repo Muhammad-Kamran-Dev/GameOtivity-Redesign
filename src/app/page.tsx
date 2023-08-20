@@ -4,12 +4,13 @@ import {
   ExcitingFeatures,
   Features,
   Hero,
+  FAQSection,
+  GamerPerks,
+  TestimonialSlider,
+  WalkthroughGuide,
 } from "./components";
-import FAQSection from "./components/FAQSection/FAQSection";
-import GamerPerks from "./components/Features/GamerPerks";
-import WalkthroughGuide from "./components/WalkthroughGuide/WalkthroughGuide";
+
 import { storeData } from "@/app/utils/utils";
-// import Testimonials from "./components/Testimonials/Testimonials";
 export default function Home() {
   return (
     <main className="w-11/12 mx-auto">
@@ -31,7 +32,7 @@ export default function Home() {
         key={storeData.title}
         btnText={storeData.btnText}
       />
-      {/* <Testimonials /> */}
+      <TestimonialSlider />
       <FAQSection />
     </main>
   );
