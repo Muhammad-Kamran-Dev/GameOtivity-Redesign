@@ -40,8 +40,8 @@ const TestimonialSlider = () => {
         onSlideChange={() => console.log("slide change")}
       >
         {[1, 2, 3, 12, 23, 1, 41, 51, , 1, 32, 12, 23, 1, 41, 51, , 1, 32].map(
-          () => (
-            <SwiperSlide className="shadow-xl ">
+          (_, index) => (
+            <SwiperSlide className="shadow-xl " key={index}>
               <div className="flex flex-col items-center px-16 py-10 space-y-2 card">
                 <div className="self-start transform -translate-x-5 translate-y-2">
                   <svg
@@ -77,8 +77,10 @@ const TestimonialSlider = () => {
                   and earning rewards at the same time. Thank you, Gameotivity!
                 </p>
                 <div className="flex justify-center gap-1 ">
-                  {[1, 2, 3, 4, 5].map(() => {
-                    return <AiFillStar className="fill-[#F1C644]" />;
+                  {[1, 2, 3, 4, 5].map((_, index) => {
+                    return (
+                      <AiFillStar key={index} className="fill-[#F1C644]" />
+                    );
                   })}
                 </div>
                 <div>
