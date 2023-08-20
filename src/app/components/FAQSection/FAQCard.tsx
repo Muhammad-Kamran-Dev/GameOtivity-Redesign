@@ -13,9 +13,9 @@ const FaqCard = ({ count, question, desc }: Prop) => {
     <article
       className={`border-t-[2px] rounded-sm border-[#FF7736] flex justify-between gap-7 lg:gap-20 h-fit mb-10 lg:mb-7 px-2`}
     >
-      <h2 className=" text-xl lg:text-2xl self-start mt-5">{count}</h2>
-      <div className="content space-y-5 mt-5  ">
-        <h3 className=" text-base lg:text-xl ">{question}</h3>
+      <h2 className="self-start mt-5 text-xl lg:text-2xl">{count}</h2>
+      <div className="mt-5 space-y-5 content ">
+        <h3 className="text-base lg:text-xl">{question}</h3>
         <p
           className={`lg:w-11/12 transition-all duration-100 ease-in-out text-sm lg:text-base ${
             toggle
@@ -26,44 +26,13 @@ const FaqCard = ({ count, question, desc }: Prop) => {
           {desc}
         </p>
       </div>
-      <div className="toggle-question mt-5 min-w-fit">
-        {toggle ? (
+      <div className="mt-5 cursor-pointer toggle-question min-w-fit">
+        {
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 66 66"
-            fill="none"
-            className="w-10 lg:w-16"
-            onClick={() => setToggle((prv) => !prv)}
-          >
-            <circle
-              cx="33"
-              cy="33"
-              r="31.5"
-              stroke="#CD624B"
-              stroke-width="3"
-            />
-            <path
-              d="M13.517 42.3769L30.8015 21.3522C31.5151 20.3894 32.8066 20.495 33.864 20.5115C34.2042 20.5125 34.5399 20.5883 34.8472 20.7337C35.1544 20.879 35.4254 21.0903 35.6408 21.3522L52.9289 42.3769C53.1976 42.7133 53.3661 43.1179 53.4153 43.5447C53.4646 43.9715 53.3927 44.4035 53.2077 44.7918C53.0227 45.18 52.7321 45.5089 52.3687 45.7412C52.0054 45.9734 51.5839 46.0998 51.1521 46.106L15.2938 46.106C14.8596 46.1054 14.4344 45.9824 14.0676 45.7512C13.7007 45.52 13.4073 45.1901 13.2213 44.7997C13.0353 44.4094 12.9644 43.9746 13.0167 43.5458C13.069 43.117 13.2425 42.7117 13.517 42.3769Z"
-              fill="url(#paint0_linear_17_29300)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_17_29300"
-                x1="53.4454"
-                y1="33.3037"
-                x2="12.9969"
-                y2="33.3037"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#FFDE00" />
-                <stop offset="1" stop-color="#FD5900" />
-              </linearGradient>
-            </defs>
-          </svg>
-        ) : (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-10 lg:w-16"
+            className={`w-10 cursor-pointer lg:w-16 transition-transform duration-200 ease-in-out transform ${
+              toggle ? "rotate-180" : "rotate-0"
+            }`}
             viewBox="0 0 66 66"
             fill="none"
             onClick={() => setToggle((prv) => !prv)}
@@ -93,7 +62,7 @@ const FaqCard = ({ count, question, desc }: Prop) => {
               </linearGradient>
             </defs>
           </svg>
-        )}
+        }
       </div>
     </article>
   );

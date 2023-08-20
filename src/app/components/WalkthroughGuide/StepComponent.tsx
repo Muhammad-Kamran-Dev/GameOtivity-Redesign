@@ -8,7 +8,7 @@ type Prop = {
 const StepComponent = ({ imgUrl, altText }: Prop) => {
   return (
     <img
-      className="my-10 max-w-[300px] lg:max-w-full  mx-auto"
+      className="my-10 max-w-[300px] lg:max-w-full h-full  mx-auto"
       src={imgUrl}
       alt={altText}
     />
