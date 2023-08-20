@@ -12,7 +12,7 @@ type Props = {
 
 const Button = ({ btnText, link = "/", style }: Props) => {
   return (
-    <div className="flex items-center justify-center w-52 group hover:cursor-pointer self-center ">
+    <div className="flex items-center justify-center max-w-52 group hover:cursor-pointer self-center ">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className={` group-hover:stroke-none ${

@@ -4,4 +4,6 @@ GAMESTORE
 hisham
 Khayal
 Nabeel
+tailwindcss
+xsmb
 Zohaib

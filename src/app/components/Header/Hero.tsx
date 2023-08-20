@@ -14,7 +14,7 @@ const Hero = () => {
             alt="Hero title inside Blocky shape "
             className=" hidden xsmb:inline-block"
           />
-          <h1 className="absolute text-4xl font-bold leading-10 text-center md:text-3xl xl:text-6xl xl:leading-snug text-electric-blue-900">
+          <h1 className="absolute xsmb:text-2xl sm:text-4xl font-bold leading-10 text-center md:text-3xl xl:text-6xl xl:leading-snug text-electric-blue-900">
             Gaming More.
             <span className="text-orange-reward">Earn Limitless.</span>
           </h1>
@@ -24,10 +24,10 @@ const Hero = () => {
           with world fastest Network protocol.
         </p>
         <div className="flex items-center justify-center gap-5 lg:justify-start">
-          <div className="flex items-center justify-center w-52 group hover:cursor-pointer ">
+          <div className="flex items-center justify-center max-w-52 group hover:cursor-pointer ">
             <Button btnText="Access Beta" />
           </div>
-          <div className="btn-whitepaper flex items-center justify-center w-52 btn group hover:cursor-pointer">
+          <div className="btn-whitepaper flex items-center justify-center max-w-52 btn group hover:cursor-pointer">
             <svg
               className="w-full"
               viewBox="0 0 149 35"
@@ -61,7 +61,7 @@ const Hero = () => {
 
             <Link
               href="/ "
-              className="absolute flex gap-2 whitespace-nowrap group-hover:text-electric-blue-900"
+              className="text-sm  absolute flex gap-2 whitespace-nowrap group-hover:text-electric-blue-900"
             >
               <VideoIcon width={24} height={24} />
               Watch Video

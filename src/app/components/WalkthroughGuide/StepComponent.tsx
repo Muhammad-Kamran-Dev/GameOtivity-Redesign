@@ -6,7 +6,13 @@ type Prop = {
 };
 
 const StepComponent = ({ imgUrl, altText }: Prop) => {
-  return <img className="my-10" src={imgUrl} alt={altText} />;
+  return (
+    <img
+      className="my-10 max-w-[300px] lg:max-w-full  mx-auto"
+      src={imgUrl}
+      alt={altText}
+    />
+  );
 };
 
 export default StepComponent;

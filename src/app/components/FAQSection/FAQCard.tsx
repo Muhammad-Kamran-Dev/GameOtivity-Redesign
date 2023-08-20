@@ -11,15 +11,15 @@ const FaqCard = ({ count, question, desc }: Prop) => {
   const [toggle, setToggle] = useState(false);
   return (
     <article
-      className={`border-t-[2px] rounded-sm border-[#FF7736] flex justify-between gap-7 lg:gap-20 h-fit mb-10 px-2`}
+      className={`border-t-[2px] rounded-sm border-[#FF7736] flex justify-between gap-7 lg:gap-20 h-fit mb-10 lg:mb-7 px-2`}
     >
       <h2 className=" text-xl lg:text-2xl self-start mt-5">{count}</h2>
       <div className="content space-y-5 mt-5  ">
         <h3 className=" text-base lg:text-xl ">{question}</h3>
         <p
-          className={`lg:w-11/12 transition-all duration-300 ease-in-out text-sm lg:text-base ${
+          className={`lg:w-11/12 transition-all duration-100 ease-in-out text-sm lg:text-base ${
             toggle
-              ? "opacity-100 h-24 lg:h-16 transform translate-y-0  "
+              ? "opacity-100 h-24 lg:h-14 transform translate-y-0  "
               : "h-0 opacity-0 transform translate-y-10"
           }   overflow-hidden`}
         >

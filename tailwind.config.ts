@@ -23,6 +23,9 @@ const config: Config = {
       screens: {
         xsmb: "320px",
       },
+      transitionTimingFunction: {
+        FaqTimingFunction: "cubic-bezier(.24,1.92,.41,-0.89)",
+      },
     },
   },
   plugins: [],

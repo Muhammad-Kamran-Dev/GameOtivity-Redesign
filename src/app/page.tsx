@@ -7,7 +7,6 @@ import {
 } from "./components";
 import FAQSection from "./components/FAQSection/FAQSection";
 import GamerPerks from "./components/Features/GamerPerks";
-import Footer from "./components/Footer/Footer";
 import WalkthroughGuide from "./components/WalkthroughGuide/WalkthroughGuide";
 import { storeData } from "@/app/utils/utils";
 // import Testimonials from "./components/Testimonials/Testimonials";
