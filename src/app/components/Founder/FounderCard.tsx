@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Button from "../Button/Button";
 
 type Founder = {
@@ -31,15 +30,8 @@ const FounderCard = ({
         </h3>
         <Button btnText="LinkedIn" key={name} />
       </div>
-      <div className=" flex-1 ">
-        {/* #TODO: image is not what i want  */}
-        <Image
-          src={imgUrl}
-          width={1000}
-          height={1000}
-          className="lg:h-[400px] object-contain  "
-          alt={name}
-        />
+      <div className=" flex-1 relative lg:h-[400px]">
+        <Image src={imgUrl} objectFit="contain" layout="fill" alt={name} />
       </div>
     </article>
   );
