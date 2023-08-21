@@ -8,7 +8,13 @@ type Prop = {
 const StepComponent = ({ imgUrl, altText }: Prop) => {
   return (
     <div className="my-10 h-[500px] w-full  mx-auto relative">
-      <Image layout="fill" src={imgUrl} alt={altText} objectFit="contain " />
+      <Image
+        fill
+        src={imgUrl}
+        alt={altText}
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
     </div>
   );
 };

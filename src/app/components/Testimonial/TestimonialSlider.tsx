@@ -88,9 +88,10 @@ const TestimonialSlider = () => {
                   <div className="flex flex-col items-center gap-2 w-14 h-14 relative">
                     <Image
                       src="/assets/img/slider/user.png"
-                      layout="fill"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="p-2 border-2 border-orange-500 rounded-full  "
-                      alt=""
+                      alt="user"
                     />
                   </div>
                   <h3>John Smith</h3>

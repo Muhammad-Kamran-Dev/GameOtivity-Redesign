@@ -31,7 +31,13 @@ const FounderCard = ({
         <Button btnText="LinkedIn" key={name} />
       </div>
       <div className=" flex-1 relative lg:h-[400px]">
-        <Image src={imgUrl} objectFit="contain" layout="fill" alt={name} />
+        <Image
+          src={imgUrl}
+          className="object-contain"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          alt={name}
+        />
       </div>
     </article>
   );
