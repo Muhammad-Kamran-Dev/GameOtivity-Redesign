@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type Prop = {
   imgUrl: string;
   altText: string;
@@ -5,11 +7,9 @@ type Prop = {
 
 const StepComponent = ({ imgUrl, altText }: Prop) => {
   return (
-    <img
-      className="my-10 max-w-[300px] lg:max-w-full h-full  mx-auto"
-      src={imgUrl}
-      alt={altText}
-    />
+    <div className="my-10 h-[500px] w-full  mx-auto relative">
+      <Image layout="fill" src={imgUrl} alt={altText} objectFit="contain " />
+    </div>
   );
 };
 
