@@ -75,6 +75,7 @@ const Hero = () => {
           src="/assets/svg/hero-img.svg"
           height={100}
           width={100}
+          priority
           alt="Laptop and Electronic Gadgets"
         />
       </div>
