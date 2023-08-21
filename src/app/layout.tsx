@@ -30,11 +30,6 @@ export const metadata: Metadata = {
   colorScheme: "dark",
   creator: "Muhammad Kamran",
   publisher: "Muhammad Kamran",
-  alternates: {
-    languages: {
-      "en-US": "/en-US",
-    },
-  },
 };
 
 export default function RootLayout({

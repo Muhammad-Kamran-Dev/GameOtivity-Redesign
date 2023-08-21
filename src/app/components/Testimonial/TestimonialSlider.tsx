@@ -65,8 +65,8 @@ const TestimonialSlider = () => {
                         gradientUnits="userSpaceOnUse"
                         gradientTransform="translate(9.60889 4.84511) rotate(60.9542) scale(22.7269 27.3036)"
                       >
-                        <stop stop-color="#FFB21E" />
-                        <stop offset="1" stop-color="#FF4D00" />
+                        <stop stopColor="#FFB21E" />
+                        <stop offset="1" stopColor="#FF4D00" />
                       </radialGradient>
                     </defs>
                   </svg>
