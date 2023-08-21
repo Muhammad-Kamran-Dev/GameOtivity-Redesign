@@ -11,6 +11,7 @@ const Hero = () => {
             src="/assets/svg/hero.svg"
             height={10}
             width={10}
+            priority
             alt="Hero title inside Blocky shape "
             className=" hidden xsmb:inline-block"
           />
