@@ -58,7 +58,7 @@ export const Navbar = () => {
         } bg-black nav transition-transform duration-300 ease-in-out  `}
         >
           <ul className="flex flex-col items-center justify-center gap-10 text-4xl font-bold ">
-            <div
+            <li
               className="absolute w-10 right-10 top-10 close-btn hover:cursor-pointer"
               onClick={() => setToggle((prev) => !prev)}
             >
@@ -76,7 +76,7 @@ export const Navbar = () => {
                   data-original="#000000"
                 ></path>
               </svg>
-            </div>
+            </li>
             <li className="relative">
               <Link
                 href="/"
