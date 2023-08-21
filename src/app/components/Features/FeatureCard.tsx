@@ -9,7 +9,9 @@ export type FeatureCardType = {
 const FeatureCard: React.FC<FeatureCardType> = ({ img, title, text }) => {
   return (
     <article className="flex flex-col gap-5 max-w-[400px] justify-center items-center ">
-      <Image className="w-72" src={img} width={10} height={10} alt={title} />
+      <div className="w-72 h-72  relative">
+        <Image src={img} layout="fill" objectFit="contain" alt={title} />
+      </div>
       <h2 className="text-2xl font-bold">{title}</h2>
       <p className="text-center">{text}</p>
     </article>

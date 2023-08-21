@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 const TestimonialSlider = () => {
   return (
@@ -84,14 +85,15 @@ const TestimonialSlider = () => {
                   })}
                 </div>
                 <div>
-                  <div className="flex flex-col items-center gap-2">
-                    <img
+                  <div className="flex flex-col items-center gap-2 w-14 h-14 relative">
+                    <Image
                       src="/assets/img/slider/user.png"
-                      className="p-2 border-2 border-orange-500 rounded-full w-14 h-14 "
+                      layout="fill"
+                      className="p-2 border-2 border-orange-500 rounded-full  "
                       alt=""
                     />
-                    <h3>John Smith</h3>
                   </div>
+                  <h3>John Smith</h3>
                 </div>
               </div>
             </SwiperSlide>
