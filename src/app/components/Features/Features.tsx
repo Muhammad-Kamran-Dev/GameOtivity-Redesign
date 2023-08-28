@@ -6,17 +6,17 @@ const Features = () => {
   const featureData: FeatureCardType[] = [
     {
       title: "Community builder",
-      img: "/assets/svg/Features/Community.svg",
+      img: "/assets/svg/features/Community.svg",
       text: "Rise. Play. Earn. Triumph. Conquer. Level up. Power on. Game. Achieve greatness.NFTs with others.",
     },
     {
       title: "NFT Marketplace",
-      img: "/assets/svg/Features/Nft.svg",
+      img: "/assets/svg/features/Nft.svg",
       text: "Play. Earn. Triumph. Conquer. Level up. Power on. Game. Achieve greatness.NFTs with others.",
     },
     {
       title: "Dynamic rewards",
-      img: "/assets/svg/Features/Dynamic-reward.svg",
+      img: "/assets/svg/features/Dynamic-reward.svg",
       text: "Rise. Play. Earn. Triumph. Conquer. Level up. Power on. Game. Achieve greatness.NFTs with others.",
     },
   ];

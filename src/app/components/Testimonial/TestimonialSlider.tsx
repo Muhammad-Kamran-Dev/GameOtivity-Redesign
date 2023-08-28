@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 import Image from "next/image";
 
 const TestimonialSlider = () => {
@@ -38,7 +37,6 @@ const TestimonialSlider = () => {
             slidesPerView: 3,
           },
         }}
-        onSlideChange={() => console.log("slide change")}
       >
         {[1, 2, 3, 12, 23, 1, 41, 51, , 1, 32, 12, 23, 1, 41, 51, , 1, 32].map(
           (_, index) => (

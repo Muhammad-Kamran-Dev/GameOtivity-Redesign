@@ -17,7 +17,7 @@ const FaqCard = ({ count, question, desc }: Prop) => {
       <div className="mt-5 space-y-5 content ">
         <h3 className="text-base lg:text-xl">{question}</h3>
         <p
-          className={`lg:w-11/12 transition-all duration-100 ease-in-out text-sm lg:text-base ${
+          className={`lg:w-11/12 transition-all duration-100 linear text-sm lg:text-base ${
             toggle
               ? "opacity-100 h-24 lg:h-14 transform translate-y-0  "
               : "h-0 opacity-0 transform translate-y-10"
@@ -30,7 +30,7 @@ const FaqCard = ({ count, question, desc }: Prop) => {
         {
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`w-10 cursor-pointer lg:w-16 transition-transform duration-200 ease-in-out transform ${
+            className={`w-10 cursor-pointer lg:w-16 transition-transform duration-100 linear transform ${
               toggle ? "rotate-180" : "rotate-0"
             }`}
             viewBox="0 0 66 66"

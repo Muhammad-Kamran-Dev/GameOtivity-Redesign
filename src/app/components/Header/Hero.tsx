@@ -2,24 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import VideoIcon from "@/../public/assets/svg/icons-components/VideoIcon";
 import Button from "../Button/Button";
+
+import Heading from "@/../public/assets/svg/heading.svg";
 const Hero = () => {
   return (
     <section className="grid items-center grid-cols-1 gap-10 mb-32 lg:items-start md:grid-cols-2 margin-bottom">
       <div className="flex flex-col gap-7 hero-text ">
-        <div className="relative flex items-center justify-center hero-title">
-          <Image
-            src="/assets/svg/hero.svg"
-            height={10}
-            width={10}
-            priority
-            alt="Hero title inside Blocky shape "
-            className=" hidden xsmb:inline-block"
-          />
-          <h1 className="absolute xsmb:text-2xl sm:text-4xl font-bold leading-10 text-center md:text-3xl xl:text-6xl xl:leading-snug text-electric-blue-900">
-            Gaming More.
-            <span className="text-orange-reward">Earn Limitless.</span>
-          </h1>
-        </div>
+        <Image priority src={Heading} alt="heading" />
         <p className="self-center w-11/12 text-center lg:self-start text-1xl lg:text-left">
           Play your favorite game and be the part of the ultimate experience
           with world fastest Network protocol.
@@ -70,11 +59,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="hidden lg:transform lg:translate-x-12 md:block">
+      <div className="hidden lg:transform lg:translate-x-12 md:block w-full h-full relative">
         <Image
           src="/assets/svg/hero-img.svg"
-          height={100}
-          width={100}
+          fill
           priority
           alt="Laptop and Electronic Gadgets"
         />

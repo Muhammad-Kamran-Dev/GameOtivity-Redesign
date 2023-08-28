@@ -30,10 +30,10 @@ const FounderCard = ({
         </h3>
         <Button btnText="LinkedIn" key={name} />
       </div>
-      <div className=" flex-1 relative lg:h-[400px]">
+      <div className=" flex-1 relative w-full aspect-square lg:h-[400px] ">
         <Image
           src={imgUrl}
-          className="object-contain"
+          className="object-contain bg-center "
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           alt={name}
