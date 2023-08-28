@@ -61,7 +61,7 @@ const Hero = () => {
       </div>
       <div className="hidden lg:transform lg:translate-x-12 md:block w-full h-full relative">
         <Image
-          src="/assets/svg/hero-img.svg"
+          src="/assets/svg/hero.png"
           fill
           priority
           alt="Laptop and Electronic Gadgets"
