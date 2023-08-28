@@ -59,7 +59,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="hidden lg:transform lg:translate-x-12 md:block w-full h-full relative">
+      <div className="hidden lg:transform lg:translate-x-12 md:block w-full aspect-video relative">
         <Image
           src="/assets/svg/hero.png"
           fill
