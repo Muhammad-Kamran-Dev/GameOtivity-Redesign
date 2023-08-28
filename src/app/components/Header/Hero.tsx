@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import VideoIcon from "@/../public/assets/svg/icons-components/VideoIcon";
 import Button from "../Button/Button";
-
+import HeroImg from "@/../public/assets/svg/hero.png";
 import Heading from "@/../public/assets/svg/heading.svg";
 const Hero = () => {
   return (
@@ -59,13 +59,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="hidden lg:transform lg:translate-x-12 md:block w-full aspect-video relative">
-        <Image
-          src="/assets/svg/hero.png"
-          fill
-          priority
-          alt="Laptop and Electronic Gadgets"
-        />
+      <div className="hidden lg:transform lg:translate-x-12 md:block">
+        <Image src={HeroImg} priority alt="Laptop and Electronic Gadgets" />
       </div>
     </section>
   );
