@@ -1,13 +1,7 @@
 import Image from "next/image";
 import Button from "../Button/Button";
+import { Founder } from "../../../../types";
 
-type Founder = {
-  name: string;
-  imgUrl: string;
-  designation: string;
-  link?: string;
-  left?: boolean;
-};
 const FounderCard = ({
   imgUrl,
   name,

@@ -1,23 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import CoreFeatureCard from "./CoreFeatureCard";
-import { Props } from "./CoreFeatureCard";
 import GamerPerks from "./GamerPerks";
+import { cardData } from "../../../../constants";
+import { gamesPerkData } from "../../../../constants";
 const CoreFeature = () => {
-  const cardData: Props[] = [
-    {
-      imgUrl: "/assets/img/time-based-reward.svg",
-      title: "Time-based reward system",
-      description:
-        "Offers a diverse range of NFT rewards, including game-specific NFTs, platform-wide NFTs , and NFTs from third-party sources.",
-    },
-    {
-      imgUrl: "/assets/img/nft.svg",
-      title: "NFT reward diversity",
-      description:
-        "Offers a diverse range of NFT rewards, including game-specific NFTs, platform-wide NFTs , and NFTs from third-party sources.",
-    },
-  ];
   return (
     <>
       <section className="lg:p-10 xl:p-16 lg:core-feature-bg mb-16">
@@ -54,14 +41,10 @@ const CoreFeature = () => {
         </article>
       </section>
       <GamerPerks
-        heading="CORE FEATURES"
-        title="Experience the future of gaming"
-        imgUrl="/assets/img/company-logos.png"
-        desc=" Gameotivity is changing the way we play games. This innovative
-            platform combines the excitement of gaming with the potential for
-            real rewards, including unique NFTs. With Gameotivity, you can earn
-            rewards just by playing the games you love, making it a must-try for
-            any gamer or NFT enthusiast"
+        heading={gamesPerkData.heading}
+        title={gamesPerkData.title}
+        imgUrl={gamesPerkData.imgUrl}
+        desc={gamesPerkData.desc}
       />
     </>
   );

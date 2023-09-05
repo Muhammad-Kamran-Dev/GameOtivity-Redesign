@@ -4,9 +4,10 @@ import VideoIcon from "@/../public/assets/svg/icons-components/VideoIcon";
 import Button from "../Button/Button";
 import HeroImg from "@/../public/assets/svg/hero.png";
 import Heading from "@/../public/assets/svg/heading.svg";
+
 const Hero = () => {
   return (
-    <section className="grid items-center grid-cols-1 gap-10 mb-32 lg:items-start md:grid-cols-2 margin-bottom">
+    <section className="grid items-center grid-cols-1 gap-10 mb-32 lg:items-start md:grid-cols-2 margin-bottom  mx-auto ">
       <div className="flex flex-col gap-7 hero-text ">
         <Image priority src={Heading} alt="heading" />
         <p className="self-center w-11/12 text-center lg:self-start text-1xl lg:text-left">
@@ -14,7 +15,7 @@ const Hero = () => {
           with world fastest Network protocol.
         </p>
         <div className="flex items-center justify-center gap-5 lg:justify-start">
-          <div className="flex items-center justify-center max-w-52 group hover:cursor-pointer ">
+          <div className="flex items-center justify-center max-w-24  md:max-w-52 group hover:cursor-pointer ">
             <Button btnText="Access Beta" />
           </div>
           <div className="btn-whitepaper flex items-center justify-center max-w-52 btn group hover:cursor-pointer">

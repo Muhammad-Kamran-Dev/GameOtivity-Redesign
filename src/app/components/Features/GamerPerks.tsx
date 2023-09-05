@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
 import Button from "../Button/Button";
 
 type Props = {
@@ -34,7 +32,7 @@ const GamerPerks = ({
           <p className="w-11/12  leading-7 mb-5">{desc}</p>
           {hasBtn && (
             <Button
-              btnText="Coming Soon"
+              btnText={btnText || "Coming Soon"}
               style={{
                 fill: "fill-[#DD26FF]",
               }}

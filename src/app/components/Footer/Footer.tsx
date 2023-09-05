@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 
 const Footer = () => {
   return (
@@ -27,7 +26,7 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div className=" flex flex-col gap-10 min-w-[200px]  min-w-[100px] min-w-fit">
+        <div className=" flex flex-col gap-10  min-w-fit">
           <h3 className="text-2xl text-center lg:text-left ">
             Our Information Us{" "}
           </h3>
@@ -52,7 +51,7 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div className=" flex flex-col gap-10 min-w-[200px]  min-w-[100px] min-w-fit">
+        <div className=" flex flex-col gap-10 min-w-fit">
           <h3 className="text-2xl text-center lg:text-left ">My Account </h3>
           <nav>
             <ul className="space-y-2">
@@ -74,7 +73,7 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div className=" flex flex-col gap-10 min-w-[200px]  min-w-[100px] min-w-fit">
+        <div className=" flex flex-col gap-10  min-w-fit">
           <h3 className="text-2xl text-center lg:text-left ">Our Policies </h3>
 
           <nav>

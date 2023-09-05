@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define custom CSS variables */
 :root {
   --neutral-900: #fff;
   --rgba-purple: rgba(25, 0, 139, 0.97);
   --rgba-black: rgba(23, 23, 24, 0.96);
 }
 
+/* Reset default styles for all elements */
 *,
 *::after,
 *::before {
@@ -16,7 +18,9 @@
   padding: 0;
 }
 
+/* Define utility classes */
 @layer utilities {
+  /* Gradient background utility class */
   .gradient-dark {
     background: linear-gradient(
       to right,
@@ -24,23 +28,24 @@
       var(--rgba-black)
     );
   }
+
+  /* Margin-bottom utility class for spacing */
   .margin-bottom {
     @apply mb-20;
     @apply lg:mb-52;
   }
 
-  /* Main-Grid */
-
+  /* Define styles for a grid container */
   .main-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 5em;
     place-items: center;
   }
-  /* Header */
 
+  /* Header styles */
   .btn-whitepaper:hover svg stop {
-    stopcolor: #f97316;
+    stop-color: #f97316;
     transition: stopColor 0.3s ease-in-out;
   }
 
@@ -58,15 +63,20 @@
     transform: translate(-50%, 0);
     bottom: -25%;
   }
+
+  /* Gradient border styles */
   .gradient-b-border {
     background: linear-gradient(to left, #7f00ff, #e100ff);
   }
+
+  /* Glow effect */
   .b-glow {
-    filter: drop-shadow(0px 0px 10.260000228881836px #c301ff)
-      drop-shadow(0px 0px 71.81999969482422px #c301ff)
-      drop-shadow(0px 0px 123.12000274658203px #c301ff)
-      drop-shadow(0px 0px 215.4600067138672px #c301ff);
+    filter: drop-shadow(0px 0px 10.26px #c301ff)
+      drop-shadow(0px 0px 71.82px #c301ff) drop-shadow(0px 0px 123.12px #c301ff)
+      drop-shadow(0px 0px 215.46px #c301ff);
   }
+
+  /* Core feature background styles */
   .core-feature-bg {
     border-radius: 3.125rem;
     background: linear-gradient(
@@ -77,6 +87,7 @@
     box-shadow: 17px 2px 10px 1px rgba(0, 0, 0, 0.25);
   }
 
+  /* Card background gradient styles */
   .card-bg-gradient {
     @apply rounded-3xl;
     background: linear-gradient(
@@ -89,6 +100,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
+  /* Gradient from left utility class */
   .bg-gradient-left {
     background: linear-gradient(
       to left,
@@ -98,16 +110,21 @@
       #2dd8b954 100%
     );
   }
+
+  /* Subtitle styles */
   .article-subtitle {
     @apply text-2xl font-bold leading-snug uppercase lg:text-4xl;
   }
 }
 
+/* Global styles for images and SVGs */
 img,
 svg {
   width: 100%;
   max-width: 100%;
 }
+
+/* Body styles */
 body {
   background: linear-gradient(to right, var(--rgba-black), var(--rgba-purple));
   color: var(--neutral-900);
@@ -116,7 +133,7 @@ body {
   width: 100vw;
 }
 
-/* Testimonials */
+/* Testimonials section styles */
 .testimonial-container {
   border-radius: 2.24206rem;
   background: linear-gradient(
@@ -126,6 +143,7 @@ body {
   );
   backdrop-filter: blur(57.87820816040039px);
 }
+
 .testimonial-card {
   border-radius: 2.38944rem;
   background: url("/assets/img/Rectangle.png"),
@@ -133,6 +151,7 @@ body {
   background-blend-mode: multiply;
 }
 
+/* Card styles */
 .card {
   border-radius: 2.24206rem;
   background: linear-gradient(
@@ -146,5 +165,6 @@ body {
       rgba(255, 255, 255, 0.15) inset;
   backdrop-filter: blur(57.87820816040039px);
 
+  /* Additional background gradient */
   background: linear-gradient(to left, #fef8ff36, #fef8ff00);
 }

@@ -1,17 +1,8 @@
 import React from "react";
 import StepComponent from "./StepComponent";
+import { steps } from "@/../constants";
 
-type imagesData = {
-  imgUrl: string;
-  altText: string;
-};
 const WalkthroughGuide = () => {
-  const steps: imagesData[] = [
-    { imgUrl: "/assets/svg/WalkthroughGuide/step1.svg", altText: "Step 1" },
-    { imgUrl: "/assets/svg/WalkthroughGuide/step2.svg", altText: "Step 2" },
-    { imgUrl: "/assets/svg/WalkthroughGuide/step3.svg", altText: "Step 3" },
-    { imgUrl: "/assets/svg/WalkthroughGuide/step4.svg", altText: "Step 4" },
-  ];
   return (
     <>
       <div className="flex justify-center mb-6">

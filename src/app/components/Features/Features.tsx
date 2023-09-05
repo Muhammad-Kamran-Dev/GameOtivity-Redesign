@@ -1,25 +1,8 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
-import { FeatureCardType } from "./FeatureCard";
+import { featureData } from "@/../constants";
 
 const Features = () => {
-  const featureData: FeatureCardType[] = [
-    {
-      title: "Community builder",
-      img: "/assets/svg/Features/Community.svg",
-      text: "Rise. Play. Earn. Triumph. Conquer. Level up. Power on. Game. Achieve greatness.NFTs with others.",
-    },
-    {
-      title: "NFT Marketplace",
-      img: "/assets/svg/Features/Nft.svg",
-      text: "Play. Earn. Triumph. Conquer. Level up. Power on. Game. Achieve greatness.NFTs with others.",
-    },
-    {
-      title: "Dynamic rewards",
-      img: "/assets/svg/Features/Dynamic-reward.svg",
-      text: "Rise. Play. Earn. Triumph. Conquer. Level up. Power on. Game. Achieve greatness.NFTs with others.",
-    },
-  ];
   return (
     <section className="feature grid items-center justify-center grid-cols-1 mb-32 justify-items-center md:grid-cols-2 lg:grid-cols-3 margin-bottom gap-y-32 ">
       {featureData.map((feature) => (

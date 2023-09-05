@@ -1,37 +1,6 @@
-import FeatureCard, { FeatureCardType } from "./FeatureCard";
+import { featureData } from "@/../constants";
+import FeatureCard from "./FeatureCard";
 const ExcitingFeatures = () => {
-  const featureData: FeatureCardType[] = [
-    {
-      title: "Decentralized platform",
-      img: "/assets/svg/ExcitingFeatures/decentralized.svg",
-      text: "Offers a world-first decentralized game store for mobile devices, featuring a wide range of games created by independent game makers, developers, and NFT artists.",
-    },
-    {
-      title: "Community building",
-      img: "/assets/svg/ExcitingFeatures/community.svg",
-      text: "Offers a world-first decentralized game store for mobile devices, featuring a wide range of games created by independent game makers, developers, and NFT artists.",
-    },
-    {
-      title: "Fast network protocol",
-      img: "/assets/svg/ExcitingFeatures/network.svg",
-      text: "Offers a world-first decentralized game store for mobile devices, featuring a wide range of games created by independent game makers, developers, and NFT artists.",
-    },
-    {
-      title: "NFT verification system",
-      img: "/assets/svg/ExcitingFeatures/nft-verification.svg",
-      text: "Offers a world-first decentralized game store for mobile devices, featuring a wide range of games created by independent game makers, developers, and NFT artists.",
-    },
-    {
-      title: "Cross-platform compatibility",
-      img: "/assets/svg/ExcitingFeatures/cross-platform.svg",
-      text: "Offers a world-first decentralized game store for mobile devices, featuring a wide range of games created by independent game makers, developers, and NFT artists.",
-    },
-    {
-      title: "Secure wallet",
-      img: "/assets/svg/ExcitingFeatures/secure-wallet.svg",
-      text: "Offers a world-first decentralized game store for mobile devices, featuring a wide range of games created by independent game makers, developers, and NFT artists.",
-    },
-  ];
   return (
     <>
       <div className="flex justify-center">

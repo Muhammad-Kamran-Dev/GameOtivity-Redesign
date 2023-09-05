@@ -1,10 +1,5 @@
 import Image from "next/image";
-
-export type Props = {
-  imgUrl: string;
-  title: string;
-  description: string;
-};
+import { Props } from "../../../../types";
 
 const CoreFeatureCard = ({ imgUrl, title, description }: Props) => {
   return (

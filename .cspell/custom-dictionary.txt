@@ -5,6 +5,7 @@ hisham
 Kamran
 Khayal
 Nabeel
+stopcolor
 swiper
 tailwindcss
 xsmb

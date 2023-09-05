@@ -1,11 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { FeatureCardType } from "../../../../types";
 
-export type FeatureCardType = {
-  img: string;
-  title: string;
-  text: string;
-};
 const FeatureCard: React.FC<FeatureCardType> = ({ img, title, text }) => {
   return (
     <article className="flex flex-col gap-5 max-w-[400px] justify-center items-center ">
