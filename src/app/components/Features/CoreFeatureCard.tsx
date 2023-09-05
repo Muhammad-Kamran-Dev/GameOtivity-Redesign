@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Props } from "../../../../types";
+import { CardDataProps } from "../../../../types";
 
-const CoreFeatureCard = ({ imgUrl, title, description }: Props) => {
+const CoreFeatureCard = ({ imgUrl, title, description }: CardDataProps) => {
   return (
     <article
       className={`flex flex-col gap-5 p-10 my-10 md:p-14 xl:p-16 card-bg-gradient `}
