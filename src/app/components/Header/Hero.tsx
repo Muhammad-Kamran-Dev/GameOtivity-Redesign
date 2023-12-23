@@ -55,7 +55,7 @@ const Hero = () => {
               className="text-sm  absolute flex gap-2 whitespace-nowrap group-hover:text-electric-blue-900"
             >
               <VideoIcon width={24} height={24} />
-              Watch Video
+              Watch Video Now
             </Link>
           </div>
         </div>
